@@ -176,6 +176,6 @@ const iceCandidate = (room, socket, _candidate) => {
     }
 };
 
-http.listen(5000, () => {
+http.listen(process.env.PORT || 5000, () => {
     console.log('Server listening on localhost:5000');
 });
